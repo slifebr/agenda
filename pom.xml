@@ -26,6 +26,16 @@
 
     <pluginRepositories>
         <!-- jhipster-needle-maven-plugin-repository -->
+        <pluginRepository>
+            <id>maven.oracle.com</id>
+            <name>oracle-maven-repo</name>
+            <url>https://maven.oracle.com</url>
+            <layout>default</layout>
+            <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            </releases>
+        </pluginRepository>
     </pluginRepositories>
 
     <!-- jhipster-needle-distribution-management -->
@@ -175,10 +185,21 @@
             <artifactId>cache-api</artifactId>
         </dependency>
         <!-- more information at https://blogs.oracle.com/dev2dev/entry/how_to_get_oracle_jdbc -->
+        <!-- -->
         <dependency>
             <groupId>com.oracle.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>
+            <version>18.3.0.0</version>
         </dependency>
+         <!-- -->
+        <!-- https://mvnrepository.com/artifact/com.github.noraui/ojdbc8 -->
+        <!--
+        <dependency>
+            <groupId>com.github.noraui</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>12.2.0.1</version>
+        </dependency>
+        -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -591,10 +612,10 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>oracle.jdbc.OracleDriver</driver>
-                        <url>jdbc:oracle:thin:@localhost:1521:agenda</url>
-                        <defaultSchemaName></defaultSchemaName>
-                        <username></username>
-                        <password></password>
+                        <url>jdbc:oracle:thin:192.168.0.254:1521:sermasa</url>
+                        <defaultSchemaName>gestao</defaultSchemaName>
+                        <username>gestao</username>
+                        <password>brslife</password>
                         <referenceUrl>hibernate:spring:br.com.slifesys.agenda.domain?dialect=org.hibernate.dialect.Oracle12cDialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
