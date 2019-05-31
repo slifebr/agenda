@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.slifesys.agenda"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "agenda",
+    "packageName": "br.com.slifesys.agenda",
+    "packageFolder": "br/com/slifesys/agenda",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "oracle",
+    "prodDatabaseType": "oracle",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YmFmOTg5MzFkY2M1MWE1MTBiNTE0OGQyNDdjNDFkNWEwZTlhNzI1ODZiNmYzNjMzMzUxYjU2MjdjZWE4ZGU4Mjc5MDI3ZDhlYjE2YTNmYTNmNjIzNDM0MzVjYWI1ZmMyZGZjZTkwY2Y0ZDgwZWNlNWM3NDg4MzhjNDIzYTczNGI=",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
